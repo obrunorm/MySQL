@@ -17,10 +17,12 @@ insert into produto(nome, codigo, preco, dataentrega, validade) values ("Cleberi
 insert into produto(nome, codigo, preco, dataentrega, validade) values ("Clebero", 25145268, 2000.00, "27/08", "02/10");
 insert into produto(nome, codigo, preco, dataentrega, validade) values ("Cleberu", 25145269, 300000.00, "28/08", "03/10");
 
-
+select * from produto;
 select * from produto where preco > 500;
 select * from produto where preco < 5000;
 
 alter table produto add endereçodocliente varchar(255);
 update produto set endereçodocliente = "Itaquera" where id = 1;
+
+
 
